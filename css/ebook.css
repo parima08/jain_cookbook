@@ -1,0 +1,224 @@
+#main_container{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	overflow: hidden;
+	font-family: "Open Sans", "Ariel", "sans-serif";
+}
+
+.border{
+	margin: 15px;
+	height: calc(100% - 30px);
+	border: 4px solid #990606;
+}
+
+.home-content-box,
+.information-content-box{
+/*	visibility: hidden;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+*/
+/*	display: none;*/
+	/*margin: 3em;*/
+	overflow: hidden;
+	top: calc(30px + 1em);
+	right: calc(30px + 1em);
+	height: calc(100% - 30px - 4em);
+/*	display: inline-flex;*/
+	width: calc(100% - 30px - 4em);
+	position: absolute;
+	z-index: 0;
+}
+
+.home-content-box{
+	background: #990606;
+}
+
+.information-content-box{
+	background: white;
+	box-shadow: 0;
+}
+
+.information-content-box.active{
+	overflow-y: scroll;
+}
+
+.home-content-box.active{
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+
+.home-content-box.active,
+.information-content-box.active {
+	/*display: block;*/
+	visibility: visible;
+	z-index: 2;
+}
+
+.center-text{
+	height: 200px;
+	width: 400px;
+	color: white;
+	position: relative;
+	margin: auto;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+
+.center-text h1{
+	font-family: "Playfair Display", "Times New Roman", "serif";
+	font-size: 6em;
+}
+
+.right-align{
+	text-align: right;
+}
+
+.center-text h3{
+	font-family: "Playfair Display", "Times New Roman", "serif";
+	font-size: 2em;
+	display: inline;
+	vertical-align: middle
+}
+
+.center-text h2.jain{
+	font-family: "Open Sans", "Ariel", "sans-serif";
+	font-weight: 700;
+	font-size: 4em;
+	display: inline;
+	vertical-align: middle
+}
+
+.scroll-direction{
+/*	background: white;*/
+	height: 75px;
+	width: 100px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -50px;
+	text-align: center;
+}
+
+.scroll-direction h5{
+	font-family: "Open Sans", "Ariel", "sans-serif";
+	font-weight: 700;
+	color: white;
+}
+.scroll-direction i{
+	color: white;
+	margin-top: -5px;
+}
+.scroll-direction:hover i,
+.scroll-direction:hover h5{
+	font-size: 1.5em;
+}
+
+.information-content-box h4{
+	margin-top: 3em;
+	text-align: center;
+	font-family: "Playfair Display", "Times New Roman", "serif";
+	font-size: 2em;
+}
+
+.information-content-box .description{
+	margin-top: 40px;
+}
+
+.information-content-box p{
+	font-family: "Open Sans", "Ariel", "sans-serif";
+	font-size: 1.3em;
+	font-weight: 300;
+	line-height: 2em;
+}
+
+
+.ebook-description{
+	margin-top: 1em;
+}
+
+.button-container{
+	margin-top: 60px;
+	height: 60px;
+	display: table;
+}
+
+
+.information-content-box a.download_btn{
+	width: 100%;
+	display: table-cell;
+	/*padding: 20px 30%;*/
+	vertical-align: middle;
+	border: 2px solid #990606;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: black;
+}
+
+.information-content-box a.download_btn:hover{
+	color: white;
+	background-color:  #990606;
+	text-decoration: none!important;
+}
+
+
+
+.slide-moveToTop {
+	-webkit-animation: moveToTop .6s ease both;
+	animation: moveToTop .6s ease both;
+}
+
+.slide-moveFromTop {
+	-webkit-animation: moveFromTop .6s ease both;
+	animation: moveFromTop .6s ease both;
+}
+
+.slide-moveToBottom {
+	-webkit-animation: moveToBottom .6s ease both;
+	animation: moveToBottom .6s ease both;
+}
+
+.slide-moveFromBottom {
+	-webkit-animation: moveFromBottom .6s ease both;
+	animation: moveFromBottom .6s ease both;
+}
+
+@-webkit-keyframes moveToTop {
+	from { }
+	to { -webkit-transform: translateY(-120%); }
+}
+@keyframes moveToTop {
+	from { }
+	to { -webkit-transform: translateY(-120%); transform: translateY(-120%); }
+}
+
+@-webkit-keyframes moveFromTop {
+	from { -webkit-transform: translateY(-100%); }
+}
+@keyframes moveFromTop {
+	from { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+}
+
+@-webkit-keyframes moveToBottom {
+	from { }
+	to { -webkit-transform: translateY(100%); }
+}
+@keyframes moveToBottom {
+	from { }
+	to { -webkit-transform: translateY(100%); transform: translateY(100%); }
+}
+
+@-webkit-keyframes moveFromBottom {
+	from { -webkit-transform: translateY(100%); }
+}
+@keyframes moveFromBottom {
+	from { -webkit-transform: translateY(100%); transform: translateY(100%); }
+}
+
