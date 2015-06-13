@@ -1,7 +1,7 @@
 #main_container{
 	position: absolute;
 	height: 100%;
-	width: 100%;
+	width:  100%;
 	left: 0;
 	right: 0;
 	z-index: 1;
@@ -17,15 +17,7 @@
 
 .home-content-box,
 .information-content-box{
-/*	visibility: hidden;
-	overflow: hidden;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	backface-visibility: hidden;
-*/
-/*	display: none;*/
-	/*margin: 3em;*/
-	overflow: hidden;
+	overflow-y: scroll;
 	top: calc(30px + 1em);
 	right: calc(30px + 1em);
 	height: calc(100% - 30px - 4em);
@@ -33,6 +25,10 @@
 	width: calc(100% - 30px - 4em);
 	position: absolute;
 	z-index: 0;
+}
+
+.information-content-box{
+	padding-top: 100px;
 }
 
 .home-content-box{
@@ -161,9 +157,13 @@
 	font-weight: 700;
 	color: black;
 }
-
-.in_book{
-	width: 5vh;
+.download_btn.in_book{
+	display: inline-block!important;
+	width: 20vh!important;
+	padding: 4vh;
+	top: 14vh!important;
+	position: relative;
+	left: 3vh;
 }
 
 .information-content-box a.download_btn:hover{
@@ -173,6 +173,175 @@
 }
 
 
+
+
+/* ------------ */
+
+/* Override Bootstrap Tab Settings */
+
+.navigation{
+	z-index: 100;
+	position: absolute;
+	top: calc(30px + 1em);
+	right: calc(30px + 1em);
+	width: calc(100% - 30px - 4em);
+	padding: 0px 3em;
+}
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:hover, 
+.nav-tabs > li.active > a:focus{
+    color: none;
+    border: none!important;
+}
+
+
+.menu .nav-tabs{
+    border-bottom: 1px solid #990606;
+    margin-bottom: 20px;
+}
+
+.menu  .nav-tabs.grey{
+    background-color: white;
+}
+
+.menu  .nav-tabs > li {
+    width: 20%;
+    text-align: center;
+}
+
+.menu  .nav-tabs > li:hover {
+    /*background-color: ;*/
+}
+
+.menu  .nav-tabs > li > a{
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 20px!important;
+    background-color: transparent!important;
+    width: 100%;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .05em;
+/*  background-color: blue;*/
+}
+
+.menu  .nav-tabs > li > a:hover{
+    border: none!important;
+}
+
+
+.navigation nav.menu  li:last-child::before {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: white;
+    /*background: #2CC185;*/
+    content: '';
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    z-index: 1;
+}
+
+
+/* Move the line */
+.navigation nav.menu li:first-child.active ~ li:last-child::before {
+    -webkit-transform: translate3d(-400%,0,0);
+    transform: translate3d(-400%,0,0);
+}
+
+.navigation nav.menu li:nth-child(2).active ~ li:last-child::before {
+    -webkit-transform: translate3d(-300%,0,0);
+    transform: translate3d(-300%,0,0);
+}
+
+.navigation nav.menu li:nth-child(3).active ~ li:last-child::before {
+    -webkit-transform: translate3d(-200%,0,0);
+    transform: translate3d(-200%,0,0);
+}
+
+.navigation nav.menu li:nth-child(4).active ~ li:last-child::before {
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+}
+
+.navigation nav.menu li:nth-child(5).active ~ li:last-child::before {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+
+
+
+
+.navigation nav.menu li:first-child:hover ~ li:last-child::before {
+    -webkit-transform: translate3d(-400%,0,0);
+    transform: translate3d(-400%,0,0);
+}
+
+.navigation nav.menu li:nth-child(2):hover ~  li:last-child::before {
+    -webkit-transform: translate3d(-300%,0,0);
+    transform: translate3d(-300%,0,0);
+}
+
+.navigation nav.menu li:nth-child(3):hover ~ li:last-child::before {
+    -webkit-transform: translate3d(-200%,0,0);
+    transform: translate3d(-200%,0,0);
+}
+
+.navigation nav.menu li:nth-child(4):hover ~  li:last-child::before {
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+}
+
+.navigation nav.menu li.active ~ li:last-child:hover::before {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+
+
+.navigation nav.menu a {
+    padding: 1em 0;
+    color: white;
+    line-height: 1;
+    -webkit-transition: color 0.3s, -webkit-transform 0.3s; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navigation nav.menu li.active a {
+    color: white;
+    /*color: #2CC185;*/
+    /*webkit-transform: translate3d(0,2px,0);
+    transform: translate3d(0,2px,0);*/
+}
+
+/* ----------- */
+
+
+.navigation.on-white nav.menu a {
+	color: #990606!important;
+}
+
+
+.navigation.on-white nav.menu  li:last-child::before {
+	background-color: #990606;
+}
+
+.navigation.on-white nav.menu li.active a {
+    color: #990606;
+    /*color: #2CC185;*/
+    /*webkit-transform: translate3d(0,2px,0);
+    transform: translate3d(0,2px,0);*/
+}
+
+
+/* *********** */
+
+
+/* *********** colors and fonts when not on home page */
 
 .slide-moveToTop {
 	-webkit-animation: moveToTop .6s ease both;
