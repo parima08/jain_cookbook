@@ -83,11 +83,11 @@ Table of Contents
 	height: 260px;*/
 	/*width: 15%;
 	height: 50%;*/
-	width: 30.5vh;
-	height: 45vh;
+	width: 27.1vh;
+	height: 40vh;
 	border: 1px solid black;
 	margin-top: 75px;
-	left: 20%;
+	left: 27.1vh;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
 	perspective: 1000px;
@@ -662,7 +662,7 @@ figcaption {
 	padding-left: 40px;
 	text-align: left;
 	position: absolute;
-	top: 0%;
+	top: -50px;
 	left: 100%;
 	width: 700px;
 	-webkit-backface-visibility: hidden;

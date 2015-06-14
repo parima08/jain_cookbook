@@ -15,8 +15,7 @@
 	border: 4px solid #990606;
 }
 
-.home-content-box,
-.information-content-box{
+.home-content-box{
 	overflow-y: scroll;
 	top: calc(30px + 1em);
 	right: calc(30px + 1em);
@@ -28,7 +27,17 @@
 }
 
 .information-content-box{
-	padding-top: 100px;
+	position: absolute;
+	overflow: scroll;
+	right: calc(30px + 1em);
+	margin-top: 130px;
+	height :calc(100% - 130px - 4em);
+	width: calc(100% - 30px - 4em);
+/*	background-color: blue!important;*/
+}
+
+.information-content-box{
+	padding-top: 40px;
 }
 
 .home-content-box{
@@ -66,6 +75,49 @@
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%)
 }
+
+.center-the-buttons{
+	position: relative;
+	width: 700px;
+	height: 50px;
+	margin: auto;
+	top: 40%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+
+/*.center-buttons{
+	position: relative;
+	width: 100%;
+	height: 50px;
+}
+*/
+.home-button{
+	width: 49%;
+	height: 100%;
+	color: white;
+	display: inline-table;
+}
+
+.home-button a.download-btn{
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	/*padding: 20px 30%;*/
+	vertical-align: middle;
+	border: 1px solid white;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: white;
+}
+.home-button a.download-btn:hover{
+	background-color: white;
+	color: #990606;
+	text-decoration: none!important;
+}
+
 
 .center-text h1{
 	font-family: "Playfair Display", "Times New Roman", "serif";
@@ -117,16 +169,16 @@
 }
 
 .information-content-box h4{
-	margin-top: 3em;
-	text-align: center;
+/*	margin-top: 3em;
+*/	text-align: center;
 	font-family: "Playfair Display", "Times New Roman", "serif";
 	font-size: 2em;
 }
 
-.information-content-box .description{
+/*.information-content-box .description{
 	margin-top: 40px;
 }
-
+*/
 .information-content-box p{
 	font-family: "Open Sans", "Ariel", "sans-serif";
 	font-size: 1.3em;

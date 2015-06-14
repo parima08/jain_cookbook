@@ -17,14 +17,6 @@
 
 .home-content-box,
 .information-content-box{
-/*	visibility: hidden;
-	overflow: hidden;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	backface-visibility: hidden;
-*/
-/*	display: none;*/
-	/*margin: 3em;*/
 	overflow: hidden;
 	top: calc(30px + 1em);
 	right: calc(30px + 1em);
@@ -70,6 +62,7 @@
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%)
 }
+
 
 .center-text h1{
 	font-family: "Playfair Display", "Times New Roman", "serif";
@@ -160,10 +153,6 @@
 	text-transform: uppercase;
 	font-weight: 700;
 	color: black;
-}
-
-.in_book{
-	width: 5vh;
 }
 
 .information-content-box a.download_btn:hover{

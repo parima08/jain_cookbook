@@ -44,6 +44,16 @@
               <h3> the </h3> <h2 class = "jain">JAIN</h2> <h3>way</h3>
             </div>
           </div>
+          <div class = "center-the-buttons">
+         <!--  <div class = "center-buttons"> -->
+                <div class = "home-button">
+                  <a class = "download-btn"> Download eBook</a>
+                </div>
+                <div class = "home-button">
+                  <a class = "download-btn"> Cruelty Free Website</a>
+                </div>
+           <!--  </div> -->
+          </div>
         </div>
 
         <div id = "download_ebook" class = "tab-pane">
@@ -128,15 +138,15 @@
             $('.navigation').addClass('on-white');
           }
 
-        var hash = window.location.hash;
-        hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+        // var hash = window.location.hash;
+        // hash && $('ul.nav a[href="' + hash + '"]').tab('show');
 
-        $('.nav-tabs a').click(function (e) {
-            $(this).tab('show');
-            var scrollmem = $('body').scrollTop();
-            window.location.hash = this.hash;
-            $('html,body').scrollTop(scrollmem);
-        });
+        // $('.nav-tabs a').click(function (e) {
+        //     $(this).tab('show');
+        //     var scrollmem = $('body').scrollTop();
+        //     window.location.hash = this.hash;
+        //     $('html,body').scrollTop(scrollmem);
+        // });
       });
     </script>
   </body>
