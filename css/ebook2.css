@@ -66,14 +66,32 @@
 
 .center-text{
 	height: 200px;
-	width: 400px;
+	width: 350px;
 	color: white;
 	position: relative;
 	margin: auto;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
-	transform: translateY(-50%)
+	transform: translateY(-50%);
+}
+
+.center-the-buttons h5{
+/*	padding-top: 10px;*/
+	text-align: center;
+	font-size: 1.7em;
+	font-weight: 300;
+/*	font-style: italic;*/
+	text-align: center;
+	color: white;
+	padding-bottom: 15px;
+	font-style: italic;
+	font-family: "Playfair Display", "Times New Roman", "serif";
+	font-weight: 400;
+	/*font-family: "Open Sans";
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1em;*/
 }
 
 .center-the-buttons{
@@ -81,7 +99,7 @@
 	width: 700px;
 	height: 50px;
 	margin: auto;
-	top: 40%;
+	top: 35%;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%)
