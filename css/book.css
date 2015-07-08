@@ -657,6 +657,7 @@ Table of Contents
 }
 
 .dedication{
+	overflow-y: scroll;
 	
 }
 
@@ -682,9 +683,35 @@ figcaption span {
 	display: block;
 }
 
+figcaption h5{
+	color: #63707d;
+	font-size: 16px!important;
+	font-family: 'Playfair Display', 'serif';
+	line-height: 1.4;
+	text-align: center;
+}
+
+figcaption p.center
+{
+	text-align: center;
+}
+
 figcaption p {
 	color: #63707d;
-	line-height: 1.3;
+	font-size: 14px!important;
+	line-height: 1.2;
+}
+
+.eating_jain_text{
+	width: 80%;
+	margin: auto;
+}
+
+.eating_jain_text h2{
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	margin-top: -10px;
+	margin-bottom: 20px;
 }
 
 /* Media Queries */
