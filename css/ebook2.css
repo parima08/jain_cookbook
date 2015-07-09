@@ -327,7 +327,7 @@
   box-sizing:border-box;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
-  border: 2px solid red;
+  border: 2px solid #990606;
   position: absolute;
   top: 25px;
   left: -50px;
@@ -335,7 +335,7 @@
   line-height: 50px;
   letter-spacing: 1px;
   /*color: #f0f0f0;*/
-  color: red;
+  color: #990606;
   background-color: white;
   z-index: 1000;
   transform: rotate(-45deg);
